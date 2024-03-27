@@ -1,0 +1,31 @@
+import requests
+import os, json, requests, shutil
+from datetime import date, datetime
+from sklearn.model_selection import cross_val_score
+import pickle
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.preprocessing import FunctionTransformer
+from sklearn.linear_model import ElasticNetCV
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import IsolationForest
+from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_samples, silhouette_score
+from scipy.cluster.hierarchy import dendrogram, linkage
+import matplotlib.cm as cm
+import numpy as np
+import pandas as pd
+import os
+import re
+from sklearn.cluster import KMeans
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import make_blobs
+from sklearn.cluster import DBSCAN
+from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
+from sklearn.cluster import AgglomerativeClustering
